@@ -1,0 +1,85 @@
+.main-paragraph{
+    color:#fff;
+    margin-top: 6rem;
+    margin-left: 15rem;
+    width:60%;
+    animation: slide-in 2s ease-out;
+}
+.left-line{
+    width: 0.6px;
+    height:20vh;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    left: 40px;
+}
+.right-line{
+    width: 0.6px;
+    height:20vh;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    right: 40px;
+}
+.fixed-p{
+    position: fixed;
+    color:#fff;
+    writing-mode: vertical-rl;
+    right: 30px;
+    bottom: 180px;
+}
+.main-heading{
+    color:#fff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.name{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.main-attach{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.main-text{
+    font-size: 1.2rem;
+    width:65%;
+}
+.main-button{
+    background: transparent;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-color: #fff;
+}
+.main-button a{
+    text-decoration: none;
+    color: #fff;
+}
+.github-icon{
+    position: fixed;
+    left: 25px;
+    bottom: 200px;
+    width:35px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+.linkedin-icon{
+    position: fixed;
+    left: 25px;
+    bottom: 280px;
+    width:35px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+@keyframes slide-in {
+    from {
+      transform: translatex(-100%);
+    }
+    to {
+      transform: translatex(0);
+    }
+  }

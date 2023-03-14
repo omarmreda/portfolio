@@ -1,0 +1,135 @@
+.projects-section{
+    margin-left: 15rem;
+    margin-top: 100px;
+
+}
+.projects-section.visible{
+    animation: slide-up 1.5s ease-out;
+}
+@keyframes slide-up{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.projects{
+    color:#fff;
+    font-size: 2rem;
+}
+.project-list{
+    margin-top: 3rem;
+}
+.project1{
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+.pData::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(25, 0, 255, 0.4);
+}
+.pData:hover::before{
+opacity: 0;
+}
+
+.projec1-title{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 120px;
+    margin-top: 1rem;
+}
+.project-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.project-title a:hover{
+    text-decoration: underline;
+}
+.pData{
+    width:50%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 2rem;
+}
+.subtitle{
+    color:aquamarine;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.card{
+    width:20%;
+    height:200px;
+    position:absolute;
+    z-index: 5;
+    width: 40%;
+    top:0px;
+    right:200px;
+
+}
+.card-attach{
+    background-color: rgb(8, 26, 73);
+    width:100%;
+    height:150px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+    color: rgb(197, 197, 197);
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.project-container{
+    display: flex;
+    position: relative;
+
+}
+.featured{
+    color: aquamarine;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: end;
+}
+.project-title{
+    color:#fff;
+    font-size: 2rem;
+    text-align: end;
+}
+.technology{
+    list-style: square;
+    color:aquamarine;
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+}
+.technology li{
+    margin-top: 8px;
+    margin-left: 40px;
+}
+.project-2{
+    margin-top: 400px;
+}
+.card2{
+    margin-top:400px;
+    width:20%;
+    height:200px;
+    position:absolute;
+    z-index: 5;
+    width: 40%;
+    top:0px;
+    right:200px;
+
+}
+
