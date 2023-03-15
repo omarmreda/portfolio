@@ -15,9 +15,7 @@ export default function NavMenu() {
                     offset={50}
                     duration={500}
                 >
-                    <li>
-                        <span>[0]</span>Home
-                    </li>
+                    <li>About</li>
                 </Link>
 
                 <Link
@@ -28,9 +26,7 @@ export default function NavMenu() {
                     offset={50}
                     duration={500}
                 >
-                    <li>
-                        <span>[1]</span>Skills
-                    </li>
+                    <li>Skills</li>
                 </Link>
                 <Link
                     activeClass="active"
@@ -40,9 +36,7 @@ export default function NavMenu() {
                     offset={50}
                     duration={500}
                 >
-                    <li>
-                        <span>[2]</span>Projects
-                    </li>
+                    <li>Projects</li>
                 </Link>
                 <Link
                     activeClass="active"
@@ -52,9 +46,7 @@ export default function NavMenu() {
                     offset={50}
                     duration={500}
                 >
-                    <li>
-                        <span>[3]</span>Contact Me
-                    </li>
+                    <li>Contact Me</li>
                 </Link>
             </ul>
         </div>

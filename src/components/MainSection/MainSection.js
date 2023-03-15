@@ -6,27 +6,30 @@ export default function MainSection() {
         <div className="main-section" name="sectionOne">
             <div className="left-line"></div>
             <div className="main-paragraph">
-                <h2 className="main-heading">Hi, my name is</h2>
-                <h1 className="name">Omar Reda</h1>
-                <h3 className="main-attach">
-                    I enjoy building web applications.
-                </h3>
-                <p className="main-text">
-                    I am looking forward to leverge my skills and my passion
-                    about programming to build user interfaces of web
-                    applications and using my programming knowledge to code
-                    wesites' appearance.
-                </p>
-
-                <a
-                    href="https://drive.google.com/file/d/1ufZbmvRHgyTsxNmetpMIlGb3vcl31q01/view?usp=sharing"
-                    download
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <button className="main-button">Download Resume!</button>
-                </a>
+                <div className="column">
+                    <h2 className="main-heading">Hi there,</h2>
+                    <h1 className="name">I am Omar Reda</h1>
+                    <h3 className="main-attach">Frontend Web developer.</h3>
+                    <p className="main-text">
+                        I've had the opportunity to work on multiple web
+                        applications.I've honed my skills in designing,building
+                        and maintaining responsive web apps. If you're looking
+                        for a frontend developer who can bring your ideas to
+                        life with creativity, skill, and dedication, look no
+                        further! I would love to hear more about your project.
+                    </p>
+                    <a
+                        href="https://drive.google.com/file/d/1ufZbmvRHgyTsxNmetpMIlGb3vcl31q01/view?usp=sharing"
+                        download
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <button className="main-button">My Resume here!</button>
+                    </a>
+                </div>
+                <div className="pic-container"></div>
             </div>
+
             <a
                 href="https://github.com/omarmreda"
                 target="_blank"

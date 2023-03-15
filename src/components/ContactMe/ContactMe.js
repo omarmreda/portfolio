@@ -1,9 +1,11 @@
 import './ContactMe.css'
-
+import contact from '../../assets/contact.png'
 export default function ContactMe() {
     return (
         <div className="contact-section" name="contactMe">
-            <div className="logo2">O R</div>
+            <div className="logo2">
+                <img src={contact} alt="contact" className="contact" />
+            </div>
             <div className="form-holder">
                 <h3 className="form-title">Get in Touch</h3>
                 <form action="/" className="form">

@@ -1,16 +1,18 @@
 .contact-section{
     display: flex;
     margin-top: 500px;
+    justify-content: space-around;
 }
 .logo2{
-    margin-left: 20rem;
-    padding-top: 80px;
     font-size: 8rem;
     font-style: italic;
     color: #fff;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-holder{
-    margin-left: 17rem;
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -56,4 +58,13 @@ input:-webkit-autofill:active {
     margin: auto;
     margin-bottom: 3rem;
     cursor: pointer;
+}
+.submit:hover{
+    background-color: #fff;
+    color:blue
+}
+.contact{
+    width:130%;
+    margin: auto;
+    padding: auto;
 }
