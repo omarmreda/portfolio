@@ -1,9 +1,15 @@
 import './NavMenu.css'
 import { Link } from 'react-scroll'
+import { useState } from 'react'
 export default function NavMenu() {
+    const [status, setStatus] = useState(false)
+
+    function handleClick() {
+        setStatus(!status)
+    }
     return (
         <div className="nav-menu">
-            <a href="#" className="logo">
+            <a href="#nav-icons" className="logo">
                 O R
             </a>
             <ul className="nav-icons">
@@ -49,6 +55,12 @@ export default function NavMenu() {
                     <li>Contact Me</li>
                 </Link>
             </ul>
+            <button
+                className={status ? 'is-active hamburger' : 'hamburger'}
+                onClick={() => handleClick()}
+            >
+                <div className="bar"></div>
+            </button>
         </div>
     )
 }

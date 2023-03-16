@@ -26,7 +26,7 @@ export default function Projects() {
                 <h4 className="subtitle">Samples I have built</h4>
                 <div className="project-list">
                     <div className="project-container">
-                        <div>
+                        <div className="firstProject">
                             <a
                                 href="https://e-commerce-six-blush.vercel.app/"
                                 target="_blank"
@@ -69,7 +69,7 @@ export default function Projects() {
                         </div>
                         <div className="project-2">
                             <a
-                                href="https://e-commerce-six-blush.vercel.app/"
+                                href="https://medical-angular.vercel.app/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="pData"
@@ -86,9 +86,17 @@ export default function Projects() {
                                     <h4 className="featured">
                                         Feautred Project
                                     </h4>
+
                                     <h4 className="project-title">
-                                        Medical App
+                                        <a
+                                            href="https://medical-angular.vercel.app/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            Medical App
+                                        </a>
                                     </h4>
+
                                     <div className="card-attach">
                                         Medical app using Angular and Tailwind
                                         Css providing some medical features like

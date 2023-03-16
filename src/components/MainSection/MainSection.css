@@ -116,3 +116,42 @@
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width:767px){
+    .fixed-p{
+        display: none;
+    }
+    .right-line{
+        display: none;
+    }
+    .left-line{
+        display: none;
+    }
+    .github-icon{
+        bottom: 30px;
+    }
+    .linkedin-icon{
+        position: fixed;
+        bottom: 30px;
+        right:20px;
+        left:auto;
+
+    }
+    .main-paragraph{
+        display: block;
+        margin: 2rem auto;
+    }
+    .column{
+        width:95%;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .main-attach{
+        font-size: 1rem;
+    }
+    .pic-container{
+        width:95%;
+        margin-top: 1rem;
+        display: block;
+    }
+}

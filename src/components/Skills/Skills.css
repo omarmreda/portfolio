@@ -36,13 +36,6 @@
     padding-top: 10px;
     box-shadow: 0 70px 63px -60px #000000;
 }
-.items{
-    display: flex;
-    gap: 150px;
-    margin-top: 1rem;
-    color: #fff;
-    margin-left: 20px;
-}
 .skills1{
     color: #fff;
     display: flex;
@@ -52,15 +45,6 @@
     font-size: 1.5rem;
     margin-left: 2rem;
 }
-/* .circle{
-    height:10rem;
-    width:10rem;
-    border-radius:50%;
-    border: 8px solid red;
-    border-top-color: gray;
-    margin-top: 3rem;
-    animation: loading 8s ease-in-out infinite;
-} */
 @keyframes loading {
     0% {
       transform: rotate(0deg);
@@ -144,7 +128,6 @@ circle.active:nth-child(2){
     inset: 5px;
     z-index: 10;
     transform: rotate(calc(3.6deg * 85));
-    /* animation: animateDot 2s linear forwards; */
 }
 .dot.active{
     animation: animateDot 2s linear forwards;
@@ -198,4 +181,19 @@ circle.active:nth-child(2){
     font-weight: 300;
     font-size:1em;
     color:#fff;
+}
+@media (max-width:767px){
+    .circles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+    }
+    .skills1{
+        margin:0;
+    }
+    .skills-paragraph{
+        margin:auto;
+    }
 }

@@ -35,6 +35,7 @@
     width:100%;
     height:100%;
     background-color: rgba(25, 0, 255, 0.4);
+    border-radius: 10px;
 }
 .pData:hover::before{
 opacity: 0;
@@ -133,3 +134,71 @@ opacity: 0;
 
 }
 
+@media (max-width:767px){
+.card{
+    position: static;
+    width:95%;
+    margin:0 auto;
+    top:auto;
+    right: auto;
+}
+.project-container{
+    position: static;
+    display: flex;
+    flex-direction: column;
+}
+.card2{
+    position: static;
+    display: block;
+    width:95%;
+    margin:0 auto;
+    margin: 0;
+    right:auto;
+    top: auto;
+}
+.project-2{
+    margin-top:150px;
+}
+.card-attach{
+    height: fit-content;
+    font-size: 0.9rem;
+}
+.subtitle{
+    display: block;
+    font-size: 1rem;
+}
+.projects-section{
+    margin:0 auto;
+
+}
+.project-title{
+    margin:0;
+    display: block;
+}
+.pData{
+    position: static;
+    display: block;
+    width: 95%;
+}
+.project1{
+    display: block;
+}
+.firstProject{
+    display: flex;
+    flex-direction: column;
+}
+.descreption{
+display: flex;
+flex-direction: column;
+margin: 0;
+}
+.technology li{
+    margin-left: auto;
+}
+.technology{
+    font-size: 0.9rem;
+}
+.pData::before{
+    display: none;
+}
+}
