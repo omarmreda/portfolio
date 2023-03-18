@@ -1,6 +1,5 @@
 import './MainSection.css'
-import github from '../../assets/github.png'
-import linkedin from '../../assets/linkedin.png'
+
 export default function MainSection() {
     return (
         <div className="main-section" name="sectionOne">
@@ -30,20 +29,6 @@ export default function MainSection() {
                 <div className="pic-container"></div>
             </div>
 
-            <a
-                href="https://github.com/omarmreda"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <img src={github} alt="github" className="github-icon" />
-            </a>
-            <a
-                href="https://linkedin.com/in/omarmreda"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <img src={linkedin} alt="github" className="linkedin-icon" />
-            </a>
             <div className="right-line"></div>
             <p className="fixed-p">This portoflio is developed with React.js</p>
         </div>

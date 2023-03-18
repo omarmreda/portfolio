@@ -40,6 +40,7 @@
     color: #fff;
     display: flex;
     gap:16rem;
+
     margin-top: 3rem;
     list-style: none;
     font-size: 1.5rem;
@@ -59,6 +60,7 @@
 .circles{
     display: flex;
     gap:8rem;
+    flex-wrap: wrap;
 }
 .card-percent{
     margin-top: 3rem;
@@ -182,6 +184,14 @@ circle.active:nth-child(2){
     font-size:1em;
     color:#fff;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .circles{
+    gap:0
+  }
+  .skills-paragraph{
+    margin: auto;
+  }
+  }
 @media (max-width:767px){
     .circles{
         display: flex;

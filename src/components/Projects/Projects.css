@@ -133,6 +133,38 @@ opacity: 0;
     right:200px;
 
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .projects-section{
+    width:85%;
+    display: block;
+    margin: auto;
+  }
+  .card-attach{
+    height: fit-content;
+    font-size: 0.9rem;
+    margin-left: 10rem;
+}
+.technology{
+    font-size: 0.9rem;
+    width:100%;
+    margin-left: 10rem;
+}
+.card{
+    width:70%;
+}
+.card2{
+    width:70%;
+}
+.featured{
+    margin-left: 30rem;
+    width: 10rem;
+}
+.project-title {
+    margin:0;
+    margin-left:25rem;
+    width:15rem
+}
+  }
 
 @media (max-width:767px){
 .card{
@@ -141,11 +173,13 @@ opacity: 0;
     margin:0 auto;
     top:auto;
     right: auto;
+
 }
 .project-container{
     position: static;
     display: flex;
     flex-direction: column;
+
 }
 .card2{
     position: static;
@@ -155,6 +189,9 @@ opacity: 0;
     margin: 0;
     right:auto;
     top: auto;
+}
+.projects{
+    margin-left: 1rem;
 }
 .project-2{
     margin-top:150px;
@@ -166,6 +203,7 @@ opacity: 0;
 .subtitle{
     display: block;
     font-size: 1rem;
+    margin-left: 1rem;
 }
 .projects-section{
     margin:0 auto;
@@ -179,6 +217,7 @@ opacity: 0;
     position: static;
     display: block;
     width: 95%;
+    margin: auto;
 }
 .project1{
     display: block;

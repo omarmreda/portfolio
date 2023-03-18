@@ -1,18 +1,30 @@
 import './NavMenu.css'
 import { Link } from 'react-scroll'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 export default function NavMenu() {
     const [status, setStatus] = useState(false)
-
+    const [visible, setVisible] = useState(true)
+    const [prevScrollPos, setPrevScrollPos] = useState(0)
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset
+            setVisible(
+                prevScrollPos > currentScrollPos || currentScrollPos < 10
+            )
+            setPrevScrollPos(currentScrollPos)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [prevScrollPos, visible])
     function handleClick() {
         setStatus(!status)
     }
     return (
-        <div className="nav-menu">
+        <div className={visible ? 'nav-menu' : 'hidden'}>
             <a href="#nav-icons" className="logo">
                 O R
             </a>
-            <ul className="nav-icons">
+            <ul className={status ? 'is-active nav-icons' : 'nav-icons'}>
                 <Link
                     activeClass="active"
                     to="sectionOne"
@@ -20,6 +32,7 @@ export default function NavMenu() {
                     smooth={true}
                     offset={50}
                     duration={500}
+                    onClick={() => handleClick()}
                 >
                     <li>About</li>
                 </Link>
@@ -31,6 +44,7 @@ export default function NavMenu() {
                     smooth={true}
                     offset={50}
                     duration={500}
+                    onClick={() => handleClick()}
                 >
                     <li>Skills</li>
                 </Link>
@@ -41,6 +55,7 @@ export default function NavMenu() {
                     smooth={true}
                     offset={50}
                     duration={500}
+                    onClick={() => handleClick()}
                 >
                     <li>Projects</li>
                 </Link>
@@ -51,6 +66,7 @@ export default function NavMenu() {
                     smooth={true}
                     offset={50}
                     duration={500}
+                    onClick={() => handleClick()}
                 >
                     <li>Contact Me</li>
                 </Link>
