@@ -17,6 +17,13 @@
     flex-direction: column;
     width: 35%;
 }
+.fixed-p{
+    position: fixed;
+    color:#fff;
+    writing-mode: vertical-rl;
+    right: 30px;
+    bottom: 180px;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -107,6 +114,9 @@ input:-webkit-autofill {
     .github-icon {
         position: static;
     }
+    .fixed-p{
+        display: none;
+    }
     .linkedin-icon {
         bottom: 20px;
         position: static;
@@ -125,6 +135,9 @@ input:-webkit-autofill {
         justify-content: center;
         align-items: center;
         margin-top: 150px;
+    }
+     .fixed-p{
+        display: none;
     }
     .github-icon {
         position: static;

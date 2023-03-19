@@ -122,6 +122,19 @@ opacity: 0;
 .project-2{
     margin-top: 400px;
 }
+.project-3{
+    margin-top: 800px;
+}
+.card3{
+    margin-top:800px;
+    width:20%;
+    height:200px;
+    position:absolute;
+    z-index: 5;
+    width: 40%;
+    top:0px;
+    right:200px;
+}
 .card2{
     margin-top:400px;
     width:20%;
@@ -153,6 +166,9 @@ opacity: 0;
     width:70%;
 }
 .card2{
+    width:70%;
+}
+.card3{
     width:70%;
 }
 .featured{
@@ -190,10 +206,22 @@ opacity: 0;
     right:auto;
     top: auto;
 }
+.card3{
+    position: static;
+    display: block;
+    width:95%;
+    margin:0 auto;
+    margin: 0;
+    right:auto;
+    top: auto
+}
 .projects{
     margin-left: 1rem;
 }
 .project-2{
+    margin-top:150px;
+}
+.project-3{
     margin-top:150px;
 }
 .card-attach{
@@ -232,10 +260,11 @@ flex-direction: column;
 margin: 0;
 }
 .technology li{
-    margin-left: auto;
+    margin-left: 30px;
 }
 .technology{
     font-size: 0.9rem;
+    margin-right: 10px;
 }
 .pData::before{
     display: none;

@@ -1,6 +1,12 @@
 import './MainSection.css'
 
 export default function MainSection() {
+    const handleDownloadPdf = () => {
+        const link = document.createElement('a')
+        link.href = '/resume.pdf'
+        link.download = 'my_resume.pdf'
+        link.click()
+    }
     return (
         <div className="main-section" name="sectionOne">
             <div className="left-line"></div>
@@ -17,20 +23,15 @@ export default function MainSection() {
                         life with creativity, skill, and dedication, look no
                         further! I would love to hear more about your project.
                     </p>
-                    <a
-                        href="https://drive.google.com/file/d/1ufZbmvRHgyTsxNmetpMIlGb3vcl31q01/view?usp=sharing"
-                        download
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <button className="main-button">My Resume here!</button>
-                    </a>
+
+                    <button className="main-button" onClick={handleDownloadPdf}>
+                        My Resume here!
+                    </button>
                 </div>
                 <div className="pic-container"></div>
             </div>
 
             <div className="right-line"></div>
-            <p className="fixed-p">This portoflio is developed with React.js</p>
         </div>
     )
 }

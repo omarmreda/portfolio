@@ -127,6 +127,7 @@ export default function ContactMe() {
                     </div>
                 )}
             </div>
+            <p className="fixed-p">This portoflio is developed with React.js</p>
         </div>
     )
 }

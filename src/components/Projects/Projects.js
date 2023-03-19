@@ -1,6 +1,7 @@
 import './Projects.css'
 import project1 from '../../assets/e-commerce.jpg'
 import medical from '../../assets/medical.jpg'
+import reads from '../../assets/reads.jpg'
 import { useEffect, useRef } from 'react'
 export default function Projects() {
     const sectionRef = useRef(null)
@@ -112,22 +113,50 @@ export default function Projects() {
                                 </div>
                             </div>
                         </div>
+                        <div className="project-3">
+                            <a
+                                href="https://github.com/omarmreda/reads"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="pData"
+                            >
+                                <img
+                                    src={reads}
+                                    alt="e-commerce"
+                                    className="project1"
+                                />
+                            </a>
+
+                            <div className="descreption2">
+                                <div className="card3">
+                                    <h4 className="featured">
+                                        Feautred Project
+                                    </h4>
+
+                                    <h4 className="project-title">
+                                        <a
+                                            href="https://github.com/omarmreda/reads"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            Reads App
+                                        </a>
+                                    </h4>
+
+                                    <div className="card-attach">
+                                        Book library App using React where the
+                                        user can move the book between three
+                                        main shelves Reading , Currently reading
+                                        and want to read.
+                                    </div>
+                                    <ul class="technology">
+                                        <li>React</li>
+                                        <li>React Router</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    {/* <a
-                        href="https://e-commerce-six-blush.vercel.app/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pData"
-                    >
-                        <img
-                            src={medical}
-                            alt="e-commerce"
-                            className="project1"
-                        />
-                        <p className="projec1-title">
-                            Medical Project using Angular
-                        </p>
-                    </a> */}
                 </div>
             </div>
         </div>
