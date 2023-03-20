@@ -1,5 +1,5 @@
 import './MainSection.css'
-
+import LazyLoad from 'react-lazy-load'
 export default function MainSection() {
     const handleDownloadPdf = () => {
         const link = document.createElement('a')
@@ -28,7 +28,12 @@ export default function MainSection() {
                         My Resume here!
                     </button>
                 </div>
-                <div className="pic-container"></div>
+                <LazyLoad
+                    once
+                    placeholder={<div className="placeholder"></div>}
+                >
+                    <div className="pic-container"></div>
+                </LazyLoad>
             </div>
 
             <div className="right-line"></div>
