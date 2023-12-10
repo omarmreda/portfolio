@@ -20,17 +20,17 @@ export default function NavMenu() {
         setStatus(!status)
     }
     return (
-        <div className={visible ? 'nav-menu' : 'hidden'}>
-            <a href="#nav-icons" className="logo">
+        <nav className={visible ? 'nav-menu' : 'hidden'}>
+            <Link to="/" className="logo">
                 O R
-            </a>
+            </Link>
             <ul className={status ? 'is-active nav-icons' : 'nav-icons'}>
                 <Link
                     activeClass="active"
                     to="sectionOne"
                     spy={true}
                     smooth={true}
-                    offset={50}
+                    offset={0}
                     duration={500}
                     onClick={() => handleClick()}
                 >
@@ -42,7 +42,7 @@ export default function NavMenu() {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={50}
+                    offset={-20}
                     duration={500}
                     onClick={() => handleClick()}
                 >
@@ -53,7 +53,7 @@ export default function NavMenu() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={50}
+                    offset={-20}
                     duration={500}
                     onClick={() => handleClick()}
                 >
@@ -77,6 +77,6 @@ export default function NavMenu() {
             >
                 <div className="bar"></div>
             </button>
-        </div>
+        </nav>
     )
 }
