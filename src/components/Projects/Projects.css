@@ -69,16 +69,6 @@ opacity: 0;
     margin-top: 2rem;
     font-size: 1.5rem;
 }
-.card{
-    width:20%;
-    height:200px;
-    position:absolute;
-    z-index: 5;
-    width: 40%;
-    top:0px;
-    right:200px;
-
-}
 .card-attach{
     background-color: rgb(8, 26, 73);
     width:100%;
@@ -253,11 +243,6 @@ opacity: 0;
 .firstProject{
     display: flex;
     flex-direction: column;
-}
-.descreption{
-display: flex;
-flex-direction: column;
-margin: 0;
 }
 .technology li{
     margin-left: 30px;

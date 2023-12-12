@@ -21,13 +21,53 @@ export default function Projects() {
         }
     }, [])
     return (
-        <div name="projects">
+        <section name="projects">
             <div className="projects-section" ref={sectionRef}>
                 <h2 className="projects">Projects</h2>
                 <h4 className="subtitle">Samples I have built</h4>
                 <div className="project-list">
                     <div className="project-container">
-                        <div className="firstProject">
+                        <div className=''>
+                            <a
+                                href="https://e-commerce-six-blush.vercel.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="pData"
+                            >
+                                <img
+                                    src={project1}
+                                    alt="e-commerce"
+                                    className="project1"
+                                />
+                            </a>
+                            <div className="flex flex-col m-0">
+                                <div className="w-2/5 h-52 absolute top-0 right-48 z-10">
+                                    <h4 className="featured">
+                                        Feautred Project
+                                    </h4>
+                                    <h4 className="project-title">
+                                        <a
+                                            href="https://e-commerce-six-blush.vercel.app/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            O-Burger
+                                        </a>
+                                    </h4>
+                                    <div className="card-attach">
+                                        E-commerce project using React and Redux
+                                        to build a store for sandwiches and
+                                        juices where the user can buy a sanwich
+                                        and juice and update the items count.
+                                    </div>
+                                    <ul class="technology">
+                                        <li>React</li>
+                                        <li>Redux</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="firstProject">
                             <a
                                 href="https://e-commerce-six-blush.vercel.app/"
                                 target="_blank"
@@ -67,8 +107,9 @@ export default function Projects() {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div className="project-2">
+                        </div> */}
+
+                        {/* <div className="project-2">
                             <a
                                 href="https://medical-angular.vercel.app/"
                                 target="_blank"
@@ -155,10 +196,10 @@ export default function Projects() {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
